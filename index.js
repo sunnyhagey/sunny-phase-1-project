@@ -16,6 +16,7 @@ const moviesUrl = baseUrl + "movies/"
 //   })
 
 
+
 function fecthMovies () {
     fetch(moviesUrl)
     .then(resp => resp.json())
@@ -26,47 +27,53 @@ fecthMovies();
 
 
 function renderMovieData(moviesData) {
-    moviesData.forEach(movie => showMovieName(movie))
+    moviesData.forEach(movies => showMovieName(movies))
     movieDetails(moviesData[0])
 }
 //Movie Picture Display. DIV ID = "movie-display"
-function showMovieName(movie) {
+function showMovieName(movies) {
     const movieDisplay = document.getElementById("movie-display")
     
     const img = document.createElement("img")
     img.setAttribute('id', 'display-img')
     movieDisplay.appendChild(img)
-    img.src = movie.image
-    img.addEventListener("click", () => movieDetails(movie))
+    img.src = movies.image
+    img.addEventListener("click", () => movieDetails(movies))
 }
 
 // Details section. DIV ID = "movie-details"
 
-function movieDetails(movie) {
+function movieDetails(movies) {
     const details = document.getElementById("movie-details")
     
     const h2 = document.getElementById("movie")
-    h2.textContent = movie.movie
+    h2.textContent = movies.movie
 
     const img = document.getElementById("movie-image")
-    img.src = movie.image
+    img.src = movies.image
 
     const movieDescription = document.getElementById("movie-description")
-    movieDescription.textContent = movie.description 
+    movieDescription.textContent = movies.description 
 
     const rottenTomatoes = document.getElementById("rotten-tomatoes")
-    rottenTomatoes.textContent = `Rotten Tomatoes: ${movie["rottentomato"]}%`
+    rottenTomatoes.textContent = `Rotten Tomatoes: ${movies["rottentomato"]}%`
     
+    const agree = document.getElementById("agree")
+    agree.textContent = `🍿${movies.agreed} in Agreement⭐️`
+
     //Button
     const button = document.getElementById("button")
     button.onclick = function(){
-        const agree = document.getElementById("agree")
-        const result = parseInt(++movie.agreed)
+        movies.agreed += 1
 
-        agree.textContent = `${result} in Agreement`
-        
+        if (movies.id === 2){
+            alert("Oh, hi Mark!")
+        }
+
+        movieDetails(movies)
     }
 }
+
 
 //Submission Form
 
@@ -85,7 +92,7 @@ function submitYourMovie(e) {
         body: JSON.stringify({
           movie: movieForm.movie.value,
           image: movieForm.image.value,
-          description: movieForm.decription.value,
+          description: movieForm.description.value,
           rottentomato: movieForm.rottentomato.value,
           agreed: 0
       })
@@ -94,21 +101,9 @@ function submitYourMovie(e) {
       fetch(moviesUrl, postRequest)
       .then(resp => resp.json())
       .then(data => showMovieName(data))
+    
+      movieForm.reset();  // Reset all form data
+      return false; // Prevent page refresh
     }
 
-//second fetch (fetching the room specifically) + alert when button is clicked
-
-// const hiMarkUrl = "http://localhost:3000/movies/2"
-
-// function fetchForTheButtonMark() {
-//     fetch(hiMarkUrl)
-//     .then(resp => resp.json())
-//     .then(eventData => getThatDataForMark(eventData))
-// }
-
-// fetchForTheButtonMark();
-
-// function getThatDataForMark(eventData) {
-    
-// }
 

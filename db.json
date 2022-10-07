@@ -47,6 +47,14 @@
       "description": "This is another one where I feel like not much has to be said. This movie hits all the points of being absolutely horrendous while being so incredibly enjoyable to watch.",
       "rottentomato": 12,
       "agreed": 0
+    },
+    {
+      "movie": "",
+      "image": "",
+      "description": "",
+      "rottentomato": "",
+      "agreed": 0,
+      "id": 7
     }
   ]
 }

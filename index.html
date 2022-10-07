@@ -6,9 +6,8 @@
         <script defer src="./index.js"></script>
     </head>
     <body>
-      <header><img id="header" src="./images/header.gif"></header>
-            <!-- <img id="logo" src="./images/movies Pinterest -1.png"/> -->
-            <h2>Here is your trash, you little vermin:</h2>
+      <header><h1>One Man's Trash</h1></header>
+            <h2 id="shiny">Is another's favorite movie:</h2>
         <div id="movie-display"></div>
         <div id="box">
         <div id="movie-details">
@@ -16,15 +15,14 @@
             <img id="movie-image" height="703px" width="468px" src=""/>
             <p id="movie-description"></p>
             <p id="rotten-tomatoes"></p>
-            <button id="button">Certified Trash</button>
+            <button id="button" class="submit">Certified Trash</button>
             <p id="agree"></p>
         </div>
       </div>
       <div id="submission-box">
         <div class="movie-submission">
             <form class="add-movie" id="movie-form">
-              <h3>Add your own trash!</h3>
-      
+              <h3>🗑Add Your Own Trash🗑</h3>
               <input
                 type="text"
                 name="movie"
@@ -43,10 +41,11 @@
               <br />
               <input
                 type="text"
-                name="decription"
+                name="description"
                 value=""
                 placeholder="Describe this trash..."
                 class="input-text"
+                id="descriptive"
               />
               <br />
               <input
