@@ -1,0 +1,52 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "movie": "The Covenant (2006)",
+      "image": "https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/chameleon/title-movie/234004_COVENANT%2C%20THE_1400x2100_English.jpg?itok=5x0IaXJI",
+      "description": "This movie is so hilariously bad and embarrassing it is a crime not to watch it. It is the epitome of the Twilight-era.",
+      "rottentomato": 4,
+      "agreed": 0
+    },
+    {
+      "id": 2,
+      "movie": "The Room (2003)",
+      "image": "https://m.media-amazon.com/images/M/MV5BYjEzN2FlYmYtNDkwMC00NGFkLWE5ODctYmE5NmYxNzE2MmRiXkEyXkFqcGdeQXVyMjMwODc5Mw@@._V1_FMjpg_UX1000_.jpg",
+      "description": "I'm not sure much needs to be said here. However, I think we can all agree that the joy of watching this movie far exceeds the embarrassment that it exists.",
+      "rottentomato": 26,
+      "agreed": 0
+    },
+    {
+      "id": 3,
+      "movie": "Con Air (1997)",
+      "image": "https://m.media-amazon.com/images/M/MV5BMGZmNGIxMTYtMmVjMy00YzhkLWIyOTktNTExZGFiYjNiNzdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+      "description": "Going into this film and expecting a masterpiece is a mistake. What you should be doing is going into the film expecting a fun 90s action movie where everyone is sorta in on the joke. Nic Cage is also great here, as he is often. ",
+      "rottentomato": 57,
+      "agreed": 0
+    },
+    {
+      "id": 4,
+      "movie": "Cat Woman (2004)",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjA4MzM0NDAzOF5BMl5BanBnXkFtZTcwMDY3MDYyMQ@@._V1_FMjpg_UX1000_.jpg",
+      "description": "So bad I almost didn't include it. Too bad to absolutely not include it here. Plus, Halle Berry",
+      "rottentomato": 8,
+      "agreed": 0
+    },
+    {
+      "id": 5,
+      "movie": "Leprechaun (1993)",
+      "image": "https://m.media-amazon.com/images/M/MV5BNTVhY2JhNzgtYzQxZS00YmEzLTk3ODQtZjlkYzVkN2E5MGU5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+      "description": "An absolute disgrace of a horror film. An absolute disgrace of a horror film that I was always sure to watch whenever it came on Spike TV.",
+      "rottentomato": 27,
+      "agreed": 0
+    },
+    {
+      "id": 6,
+      "movie": "Batman & Robin (1997)",
+      "image": "https://m.media-amazon.com/images/M/MV5BMGQ5YTM1NmMtYmIxYy00N2VmLWJhZTYtN2EwYTY3MWFhOTczXkEyXkFqcGdeQXVyNTA2NTI0MTY@._V1_.jpg",
+      "description": "This is another one where I feel like not much has to be said. This movie hits all the points of being absolutely horrendous while being so incredibly enjoyable to watch.",
+      "rottentomato": 12,
+      "agreed": 0
+    }
+  ]
+}

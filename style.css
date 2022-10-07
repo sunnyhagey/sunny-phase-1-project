@@ -1,0 +1,60 @@
+body {
+    color: white;
+    text-align: center;
+    background-image: url(./images/background.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+}
+
+#logo {
+    width: 368px;
+    height: 551px;
+    position: absolute;
+    left:0;
+    top:0; 
+    margin: 20px 0px 20px 0px;}
+
+    #display-img {
+        width: 100px;
+        height: auto;
+        margin: 7px;
+    }
+
+#movie-display {
+    text-align: center;
+}
+
+#box {
+    border:1px solid #999999;
+    border-radius: 25px;
+  color: white;
+  font-size:14px;
+  width:60%;
+  position: relative;
+  display: inline-block;
+  height: auto;
+  background-color: black;
+}
+
+#submission-box {
+    border:1px solid #999999;
+    border-radius: 25px;
+  color: white;
+  font-size:14px;
+  width:60%;
+  position: relative;
+  display: inline-block;
+  height: auto;
+  background-color: black;
+}
+
+#movie-display img:hover {
+    color: #111;
+    background: greenyellow;
+    box-shadow: 0 0 100px greenyellow;
+}
